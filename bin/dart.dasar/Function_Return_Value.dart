@@ -14,7 +14,7 @@ int sum(List<int> numbers) {
 }
 
 void main(List<String> args) {
-  var data = sayHello('akhmad');
+  var data = sayHello('Emmy');
   print(data);
 
   //Cara pertama
