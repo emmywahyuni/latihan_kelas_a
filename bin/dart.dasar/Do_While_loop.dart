@@ -1,10 +1,11 @@
-oid main(List<String> args) {
-  //Perulangan yang mirip dengan while
-  var counter = 100;
-  /*beda do dengan while, while dicek dulu kondisinya jika diawal sdh salah kondisinya maka while itu tdk akan di eksekusi
-  sedangkan do minimal satu kali dieksekusi walaupun kondisinya salah*/
-  do {
+void main(List<String> args) {
+  //Continue digunakan untuk menghentikan perulangan saat ini, lalu melanjutkan ke perulangan selanjutnya
+  for (var counter = 1; counter <= 100; counter++) {
+    //hanya tampil yg ganjil saja
+    if (counter % 2 == 0) {
+      continue;
+    }
+
     print('Perulangan Ke-$counter');
-    counter++;
-  } while (counter <= 10);
+  }
 }
